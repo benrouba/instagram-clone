@@ -1,0 +1,30 @@
+.fixedHeader {
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100000;
+  background: #ffffff;
+}
+@media (min-width: 450px) {
+  .container {
+    max-width: 975px;
+  }
+}
+.router-link-active svg {
+  fill: #000000;
+  color: #000000;
+  height: 24;
+  width: 24;
+
+
+}
+.router-link-active svg #mes{
+fill: #ffffff !important;
+}
+.bottomNav{
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999;
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}

@@ -1,0 +1,49 @@
+<div class="container h-100 d-flex align-items-center">
+    <div class="row no-gutters w-100 justify-content-center align-items-center">
+        <div class="col-md-6 d-largeScreen-block d-none d-lg-block">
+            <img src="../../assets/img/png/mobiles.png" alt="">
+        </div>
+        <div class="col-md-6 ">
+            <div class="formContainer p-3 p-md-5 d-flex flex-column align-items-center">
+                <img src="../../assets/img/png/instagram-logo.png" class="mt-3 mb-4" alt="">
+                <form class="w-100" [formGroup]="loginForm">
+                    <div class="form-group">
+                        <input type="email" class="form-control f16" id="email" formControlName="email"
+                            placeholder="Phone number, username, or email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control f16" id="password"formControlName="password"
+                            placeholder="Password">
+                    </div>
+                    <button class="btn w-100 btn-login text-white" [disabled]="loginForm.invalid" (click)="login(loginForm.value)">Log in </button>
+                    <div class="seperator mt-4">
+                        <span class="position-absolute lightBlue f12 px-3 log">OR </span>
+                    </div>
+                    <div class=" d-flex align-items-center justify-content-center mt-4">
+                        <img src="../../assets/img/svg/facebook.svg" class="facebookIcon mr-1" alt="">
+                        <span class="blueColor f14">Log in with Facebook</span>
+                    </div>
+                    <div class=" d-flex align-items-center justify-content-center mt-3">
+                        <span class="blueColor f12">Forgot password?</span>
+                    </div>
+
+                </form>
+            </div>
+            <div class="formContainer px-5 py-3 d-flex flex-column align-items-center mt-3">
+                <span class="">Don't have an account? <a href="">Sign up</a> </span>
+            </div>
+            <div class="d-flex  justify-content-center my-3">
+                <span class="text-center">Get the app.</span>
+            </div>
+           <div class="d-flex align-items-center justify-content-center">
+            
+            <a href="" class="mr-2">
+                <img src="../../assets/img/png/180ae7a0bcf7.png" alt="" style="width: 136px;">
+            </a>
+            <a href="">
+                <img src="../../assets/img/png/180ae7a0bcf7.png" alt=""style="width: 136px;">
+            </a>
+           </div>
+        </div>
+    </div>
+</div>

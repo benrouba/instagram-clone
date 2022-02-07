@@ -1,0 +1,22 @@
+.pt-100{
+    padding-top: 100px;
+}
+.article{
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+.profileImg{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.headerCard{
+  border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+}
+.imgPost{
+  width: 100%;
+  }
+  @media (min-width: 450px) {
+    .container {
+      max-width: 975px;
+    }
+  }

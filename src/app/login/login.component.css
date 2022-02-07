@@ -1,0 +1,38 @@
+.seperator {
+  position: relative;
+  height: 1px;
+  background: #e2e9f3;
+  width: 100%;
+}
+.log {
+  transform: translate3d(-50%, -50%, 0);
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+}
+.btn:disabled {
+  background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+}
+.btn-login {
+  background-color: #0095f6;
+}
+.facebookIcon {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 874px) {
+  .d-largeScreen-block {
+    display: block !important;
+  }
+}
+@media (min-width: 450px) {
+  .formContainer {
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  }
+}
+.container{
+  max-width: 935px;
+}
+.btn{
+  border-color: unset !important;
+}
