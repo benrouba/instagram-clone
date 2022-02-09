@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from "@angular/router";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// ******************************************************************ngxComponenets******************************************************************
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { LikesComponent } from './likes/likes.component';
 import { VideosComponent } from './videos/videos.component';
 import { FeedComponent } from './feed/feed.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { PostsComponent } from './posts/posts.component';
 
 const routes: Routes = [
 
@@ -35,6 +39,10 @@ const routes: Routes = [
     {
       path: 'feed',
       component: FeedComponent
+    },
+    {
+      path: 'profile/:id',
+      component: UserProfileComponent
     },
     {
       path: '',
@@ -62,7 +70,9 @@ const routes: Routes = [
     MessagesComponent,
     LikesComponent,
     VideosComponent,
-    FeedComponent
+    FeedComponent,
+    UserProfileComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +81,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

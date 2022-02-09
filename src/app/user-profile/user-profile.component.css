@@ -1,0 +1,28 @@
+.userIMg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #de356b;;
+}
+@media (min-width: 450px) {
+    .container {
+      max-width: 975px;
+    }
+  }
+  .imgmaxheight{
+    height: 293px;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 95%;
+    height: 95%;
+    opacity:0;
+  }
+  
+ .overlayHover {
+    opacity: 1;
+  }

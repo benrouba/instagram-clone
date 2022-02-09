@@ -1,0 +1,16 @@
+<div  bsModal #post="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-child-name">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div *ngIf="postInfo" class="">
+              <div class="row no-gutters">
+                  <div class="col-md-9">
+                      <img src="{{postInfo?.picture?.download_url}}" alt="" class=" inheritWidth">
+                  </div>
+                  <div class="col-md-3">
+                      {{postInfo|json}}
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
